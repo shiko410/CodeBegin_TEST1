@@ -104,9 +104,40 @@ nav ul li {
     font-size: 1rem;
     text-transform: capitalize;
     font-size: 1.1rem;
+    /* border-bottom: 4px solid transparent; */
 }
 nav ul li:hover {
     color: #D97438;
+    /* border-bottom: 4px solid #d97438; */
+    /* animation-duration: 5s; */
+    /* transform: translateY(5px); */
+}
+/* ボーダアニメーション */
+nav ul li {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.border {
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    overflow: hidden;
+    /* マウスアウトのときの時間 */
+    transition: 0.1s;
+}
+.border.bottom {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(0, -100%, 0);
+}
+nav ul li:hover .border {
+    transform: translate3d(0,0,0);
+    background-color: #d97438;
+    /* マウスオーバーのときの時間 */
+    transition: 1s;
 }
  /* ========================
             メイン
