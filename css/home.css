@@ -156,13 +156,20 @@ table tr td:first-of-type{
         トップページ
  ========================== */
  /* トップページ画像 */
+ .img_outer {
+     padding: 0;
+ } 
  .top-img {
     width: 100%;
     height: 30%;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 .news {
     margin: 15px 0;
+}
+.news p {
+    display: flex;
 }
  /* ========================
         アバウトページ
@@ -211,4 +218,87 @@ table tr td a {
     padding: 0px;
     width: 100%;
     display: block;
+}
+ /* ＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/
+        レスポンシブデザイン（580px以下）
+ ＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/＿/ */
+ @media screen and (max-width: 580px){
+  * {
+      font-size: 0.86rem;
+  }
+  .wrapper {
+      padding: 0 20px;
+  }
+  header div p {
+      padding-left: 0;
+      padding-right: 0;
+  }
+  nav ul  {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-top: 10px;
+  }
+  nav ul li {
+      padding: 5px 35px;
+      font-size: 1.2rem;
+  }
+  h1 {
+      margin: 15px 0 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+  }
+  h2 {
+      padding: 5px 15px;
+  }
+  h3 {
+      font-size: 12px;
+      margin-top: 5px;
+  }
+  .list h4 {
+      margin: 5px 0 0;
+  }
+  p {
+    line-height: 17px;
+    padding: 2px 20px;
+  }
+  footer > div.cpr {
+      padding: 0;
+  }
+  /* ========================
+  トップページ
+  ========================== */
+  .top-img {
+      margin-bottom: 20px;
+  }
+  .news p, .news p span{
+    line-height: 14px;
+  }
+   /* ========================
+        アバウトページ
+  ========================== */
+  table {
+      margin: 20px 0 30px;
+  }
+  table tr th, table tr td {
+      padding: 10px 10px;
+  }
+  /* ========================
+        ギャラリー
+  ========================== */
+  .list img {
+      width: 90px;
+      height: 90px;
+    }
+    hr {
+        margin: 10px;
+    }
+    /* ========================
+        ギャラリー
+    ========================== */
+    table tr td img {
+        width: 120px;
+        height: 40px;
+        padding-top: 5px;
+    }
+
 }

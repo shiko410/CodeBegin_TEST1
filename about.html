@@ -66,7 +66,7 @@ media=" (～)"の「～」部分でcssを切り替えるディスプレイのサ
             <h3>titleタグの設定はとても重要です。念入りにワードを選んで適切に入力しましょう。</h3>
             <p>
                 まず、htmlソースが見れる状態にして、上から６行目あたりにある、<br>
-                <span class="code">&lt;title>初心者向けホームページテンプレート tp_biginner5&lt;/title></span>
+                <span class="code">&lt;title>初心者向けホームページテンプレート tp_biginner5&lt;/title></span><br>
                 を編集しましょう。<br>
                 あなたのホームページ名が「SAMPLE SITE」だとすれば、<br>
                 <span class="code">&lt;title&gt;SAMPLE SITE&lt;/title&gt;</span><br>
@@ -75,6 +75,14 @@ media=" (～)"の「～」部分でcssを切り替えるディスプレイのサ
             <h3>copyrightを変更しましょう</h3>
             <p>
                 続いてhtmlの下の方にある、<br>
+                <span class="code">Copyright© SAMPLE SITE All Rights Reserved.</span><br>
+                の「SAMPLE SITE」部分もあなたのサイト名に変更します。
+            </p>
+            <h3>metaタグを変更しましょう</h3>
+            <p>
+                htmlソースが見える状態にしてmetaタグを変更しましょう。<br>
+                <br>
+                ソースの上の部分に、<br>
                 <span class="code">content="ここにサイト説明を入れます"</span><br>
                 という部分がありますので、テキストをサイトの説明文に入れ替えます。検索結果の文面に使われる場合もりますので、見た人が訪問したくなるような説明文を関節に書きましょう。<br><br>
                 続いて、その下の行の<br>
@@ -86,11 +94,11 @@ media=" (～)"の「～」部分でcssを切り替えるディスプレイのサ
             html側に<br>
             <span class="code">&lt;img src="images/logo.png" alt="SAMPLE SITE"></span><br>
             となっている箇所があるので、ここのalt指定(SAMPLE SITE)もあなたのサイト名に変更しましょう。
-            </p>
+            </p><br>
             <p>
             ロゴ画像本体については、baseフォルダに文字なしの土台画像「logo.png」が入っているので、画像ソフトなど使ってあなたのサイト名を入れて、imagesフォルダに上書きしましょう。<br>
             このロゴ画像、HPで見るサイズよりかなり大きく感じると思いますが、高解像度の端末でピンボケさせない為に適当に大きくしてあります。
-            </p>
+            </p><br>
             <p>
             レイアウト上のロゴの大きさは、cssフォルダのstyle.cssの<br>
             <span class="orange">/*ヘッダー（ロゴが入った最上段のブロック）</span><br>
@@ -98,7 +106,7 @@ media=" (～)"の「～」部分でcssを切り替えるディスプレイのサ
             <span class="orange">#logo img</span><br>
             にあるwidthの値で変更可能です。css下の方に小さな端末用の設定がある場合もあるのでそちらも確認して下さい。<br>
             </p>
-            <h3>その他、テンプレートのカラーやデザイン変更などは</h3>
+            <h2>その他、テンプレートのカラーやデザイン変更などは</h3>
             <p>
             cssフォルダのstyle.cssで行って下さい。詳しい解説も書かれています。<br>
             cssの解説は、「<span class="orange">/*</span>」と「<span class="orange">*/</span>」の間にコメントとして入れています。「<span class="orange">/*</span>」と「<span class="orange">*/</span>」はcss用のコメントタグであり、飾りではないので削除をしないで下さい。もし解説を削除したい場合は、「<span class="orange">/*</span>」と「<span class="orange">*/</span>」含めて丸ごと削除して下さい。
